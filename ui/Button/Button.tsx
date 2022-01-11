@@ -8,6 +8,8 @@ export const Button = (props: ButtonProps) => {
 		children,
 		className,
 		disabled = false,
+		variant = 'outlined',
+		color = 'primary',
 		onClick,
 		type
 	} = props;
@@ -17,6 +19,8 @@ export const Button = (props: ButtonProps) => {
 	const handlerMouseLeave = () => {setHover(false);}
 	const classNameButton = cn(
 		styles.button,
+		styles['button_' + variant],
+		styles['button_' + color],
 		{
 			[styles.button_hover]: hover,
 			[styles.button_disabled]: disabled

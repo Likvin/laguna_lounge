@@ -1,18 +1,197 @@
-.button {
-  margin: 0;
-  padding: 10px 15px;
-  background-color: rgb(11, 71, 236);
-  color: #fff;
-  border-width: 0;
-  border-radius: 5px;
-  cursor: pointer;
+@import "../colorOfButtons.module.scss";
 
-  &_hover {
-    background-color: rgb(14, 52, 155);
-  }
+.button {
+  margin: 4px 10px;
+  padding: 8px 18px;
+  height: 41px;
+  width: 98px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
 
   &_disabled {
     background-color: rgb(146, 146, 197);
     cursor: default;
+  }
+
+  &_outlined {
+    margin: 0;
+    padding: 10px 15px;
+    border: 2px solid;
+
+    &.button_primary {
+      background-color: inherit;
+      color: $primary_light;
+      border-color: $primary_light;
+      &.button_hover {
+        color: $white;
+        background-color: $primary_light;
+      }
+    }
+    &.button_secondary {
+      background-color: inherit;
+      color: $secondary_light;
+      border-color: $secondary_light;
+      &.button_hover {
+        color: $white;
+        background-color: $secondary_light;
+      }
+    }
+    &.button_success {
+      background-color: inherit;
+      color: $success_light;
+      border-color: $success_light;
+      &.button_hover {
+        color: $white;
+        background-color: $success_light;
+      }
+    }
+    &.button_danger {
+      background-color: inherit;
+      color: $danger_light;
+      border-color: $danger_light;
+      &.button_hover {
+        color: $white;
+        background-color: $danger_light;
+      }
+    }
+    &.button_warning {
+      background-color: inherit;
+      color: $warning_light;
+      border-color: $warning_light;
+      &.button_hover {
+        color: $white;
+        background-color: $warning_light;
+      }
+    }
+    &.button_info {
+      background-color: inherit;
+      color: $info_light;
+      border-color: $info_light;
+      &.button_hover {
+        color: $white;
+        background-color: $info_light;
+      }
+    }
+  }
+
+  &_contained {
+    margin: 0;
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+
+    &.button_primary {
+      background-color: $primary_light;
+      color: $white;
+      border-color: inherit;
+      &.button_hover {
+        color: $white;
+        background-color: $primary_main;
+      }
+    }
+    &.button_secondary {
+      background-color: $secondary_light;
+      color: $white;
+      border-color: inherit;
+      &.button_hover {
+        color: $white;
+        background-color: $secondary_main;
+      }
+    }
+    &.button_success {
+      background-color: $success_light;
+      color: $white;
+      border-color: inherit;
+      &.button_hover {
+        color: $white;
+        background-color: $success_main;
+      }
+    }
+    &.button_danger {
+      background-color: $danger_light;
+      color: $white;
+      border-color: inherit;
+      &.button_hover {
+        color: $white;
+        background-color: $danger_main;
+      }
+    }
+    &.button_warning {
+      background-color: $warning_light;
+      color: $white;
+      border-color: inherit;
+      &.button_hover {
+        color: $white;
+        background-color: $warning_main;
+      }
+    }
+    &.button_info {
+      background-color: $info_light;
+      color: $white;
+      border-color: inherit;
+      &.button_hover {
+        color: $white;
+        background-color: $info_main;
+      }
+    }
+  }
+
+  &_text {
+    margin: 0;
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+
+    &.button_primary {
+      background-color: inherit;
+      color: $primary_light;
+      border-color: transparent;
+      &.button_hover {
+        color: $primary_main;
+      }
+    }
+    &.button_secondary {
+      background-color: inherit;
+      color: $secondary_light;
+      border-color: transparent;
+      &.button_hover {
+        color: $secondary_main;
+      }
+    }
+    &.button_success {
+      background-color: inherit;
+      color: $success_light;
+      border-color: transparent;
+      &.button_hover {
+        color: $success_main;
+      }
+    }
+    &.button_danger {
+      background-color: inherit;
+      color: $danger_light;
+      border-color: transparent;
+      &.button_hover {
+        color: $danger_main;
+      }
+    }
+    &.button_warning {
+      background-color: inherit;
+      color: $warning_light;
+      border-color: transparent;
+      &.button_hover {
+        color: $warning_main;
+      }
+    }
+    &.button_info {
+      background-color: inherit;
+      color: $info_light;
+      border-color: transparent;
+      &.button_hover {
+        color: $info_main;
+      }
+    }
   }
 }

@@ -8,7 +8,9 @@ export default {
   component: Button,
 } as ComponentMeta <typeof Button>;
 
-const Template: ComponentStory <typeof Button> = (args) => <Button {...args}>Button</Button>;
+const buttonText = "Button"
+
+const Template: ComponentStory <typeof Button> = (args) => <Button {...args}>{buttonText}</Button>;
 
 export const Default = Template.bind({});
 Default.args = {

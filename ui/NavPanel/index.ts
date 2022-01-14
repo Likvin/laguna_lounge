@@ -1,0 +1,1 @@
+export { Navpanel } from './Navpanel';

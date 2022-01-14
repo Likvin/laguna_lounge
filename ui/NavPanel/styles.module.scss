@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "RaviPrakash";
+  src: url("../../public/RaviPrakash-Regular.ttf");
+}
+
+.navpanel {
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #d0e1ee;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  & > div:last-child {
+    margin-right: 0;
+  }
+
+  & .title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: "RaviPrakash";
+    color: #1769aa;
+    font-size: 1.6rem;
+    & > *:first-child {
+      margin-left: 10px;
+      margin-right: 3px;
+    }
+  }
+}

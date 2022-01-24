@@ -8,7 +8,7 @@ export const Button = (props: ButtonProps) => {
 		children,
 		className,
 		disabled = false,
-		variant = 'outlined',
+		variant = 'contained',
 		color = 'primary',
 		onClick,
 		type

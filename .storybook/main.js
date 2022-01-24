@@ -17,6 +17,7 @@ module.exports = {
     check: true,
     tsconfig: path.resolve(__dirname, "../tsconfig.json"),
   },
+  staticDirs: ['../public'],
   "framework": "@storybook/react",
   webpackFinal: async (config, { configType }) => {
     config.module.rules.push({

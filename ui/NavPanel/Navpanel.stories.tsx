@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Navpanel } from './Navpanel';
 
 export default {
-  title: 'Example/NavPanel',
+  title: 'Components/NavPanel',
   args: {name:'Laguna Lounge'},
   component: Navpanel
 } as ComponentMeta <typeof Navpanel>;

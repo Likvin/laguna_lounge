@@ -20,7 +20,7 @@ export const Navpanel = (props: NavpanelProps) => {
 		<header className={classNameNavPanel}>
 			<div>
 				<a className={styles.title}>
-					<GiBlackSea  size ="45px" color="#1769aa" />
+					<GiBlackSea  size ="45px" color="#1769aa"/>
 					{name}
 				</a>
 			</div>

@@ -19,7 +19,7 @@ const Template: ComponentStory <typeof Card> = (args) =>
 export const Basic = Template.bind({});
 Basic.args = {
 	header: '',
-	actions: [{onClick: () =>[],title:'Инфо'},
+	actions: [{onClick: () =>[],title:'Подробно'},
 			  {onClick: () =>[],title:'ОК'}],
 	image: 'feo.jpg',
 }

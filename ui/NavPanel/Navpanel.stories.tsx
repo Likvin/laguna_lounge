@@ -1,11 +1,14 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { GiBlackSea } from 'react-icons/gi';
 
 import { Navpanel } from './Navpanel';
 
 export default {
   title: 'Components/NavPanel',
-  args: {name:'Laguna Lounge'},
+  args: {name:'Laguna Lounge',
+		 icon: <GiBlackSea/>
+		},
   component: Navpanel
 } as ComponentMeta <typeof Navpanel>;
 

@@ -2,13 +2,13 @@ import React from 'react';
 import { NavpanelProps } from './types';
 import styles from './styles.module.scss';
 import cn from 'classnames';
-import { GiBlackSea } from 'react-icons/gi';
 
 export const Navpanel = (props: NavpanelProps) => {
 	const {
 		children,
 		className,
-		name
+		name,
+		icon
 	} = props;
 
 	const classNameNavPanel = cn (
@@ -20,7 +20,7 @@ export const Navpanel = (props: NavpanelProps) => {
 		<header className={classNameNavPanel}>
 			<div>
 				<a className={styles.title}>
-					<GiBlackSea  size ="45px" color="#1769aa"/>
+					{icon}
 					{name}
 				</a>
 			</div>

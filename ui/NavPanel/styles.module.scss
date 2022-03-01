@@ -10,11 +10,12 @@
   right: 0;
   position: fixed;
   box-sizing: border-box;
-  height: 100px;
-  background-color: #d0e1ee;
+  height: 90px;
+  background-color: #363237; // Темно-фиолетовый
   display: flex;
   align-items: center;
   flex-direction: row;
+  transition: background 0.5s ease-in;
 
   & > div {
     display: flex;
@@ -32,11 +33,15 @@
     align-items: center;
     flex-direction: row;
     font-family: "RaviPrakash";
-    color: #1769aa;
-    font-size: 1.6rem;
+    color: #f1f3ce; // слоновая кость
+    font-size: 1.7rem;
     & > *:first-child {
       margin-left: 10px;
       margin-right: 3px;
     }
+  }
+
+  &_transparent {
+    background-color: transparent;
   }
 }

@@ -4,5 +4,5 @@ export type NavpanelProps = {
 	className?: string,
 	children?: ReactNode | ReactNode[],
 	name: string,
-	icon?: ReactNode 
+	icon?: ReactNode
 }
